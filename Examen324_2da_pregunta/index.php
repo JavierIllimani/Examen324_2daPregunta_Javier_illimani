@@ -13,7 +13,6 @@
         <table width='500px' border=1 class="tabla" style="margin: 0px auto;">
         <?php
             $conexion = mysqli_connect("localhost","root","","academico");
-
             /* 
             En esta parte se muestra el codigo para la segunda pregunta, de acuerdo a lo pedido:
             
@@ -29,9 +28,6 @@
                         GROUP by i.lugarResidencia";
             $resultado=mysqli_query($conexion,$sentencia);
             $registrosTotales = 0;
-            
-            
-            
             /*Ahora se llena 2 vectores para poder mostrar las tablas en forma horizontal*/
             while($number = mysqli_fetch_array($resultado))
             {
